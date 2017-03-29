@@ -1,0 +1,16 @@
+{
+  "name": "platzi",
+  "version": "1.0.0",
+  "description": "Ejemplo",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "elbuo8",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
+}

@@ -13,6 +13,7 @@ resource "digitalocean_loadbalancer" "platzi-demo" {
   healthcheck {
     port     = 3000
     protocol = "http"
+    path     = "/"
   }
 
   droplet_tag = "${digitalocean_tag.platzi-demo.name}"
@@ -23,7 +24,7 @@ resource "digitalocean_tag" "platzi-demo" {
 }
 
 resource "digitalocean_droplet" "platzi-demo" {
-  count    = 3
+  count    = 2
   image    = "23826948"
   name     = "platzi-demo-v2"
   region   = "nyc3"
